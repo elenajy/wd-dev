@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/learnjs.css">
+  <title>JS + Canvas</title>
+</head>
+
+<body>
+  <h1>First JS Project + First Canvas Project by Elena Yang</h1>
+  <br>
+  <hr>
+  <br>
+  <h2>First - Learn Javascript!</h2>
+  <button type="button" onclick="document.getElementById('myTime').innerHTML = Date()">
+    Click me to display Date and Time.</button>
+  <button type="button" onclick="document.getElementById('myTime').innerHTML = ''">
+    Click me to display Date and Time.</button>
+  <p id="myTime"></p>
+  <br>
+  <br>
+  <h2>What Can JavaScript Do?</h2>
+  <p id="changeHTML">JavaScript can change HTML content.</p>
+  <button type="button" onclick='document.getElementById("changeHTML").innerHTML
+  = "Hello JavaScript!"'>Click Me to change the HTML!</button>
+  <button type="button" onclick='document.getElementById("changeHTML").innerHTML
+  = "JavaScript can change HTML content!"'>Click Me to change the HTML!</button>
+  <br><br>
+  <p>JavaScript can also change HTML attribute values.</p>
+  <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+  <button onclick="document.getElementById('myImage').src='images/pic_bulbon.gif'">Turn on the light</button>
+  <img id="myImage" src="images/pic_bulboff.gif" style="width:100px">
+  <button onclick="document.getElementById('myImage').src='images/pic_bulboff.gif'">Turn off the light</button>
+  <br>
+  <hr>
+  <br>
+  <h1>First graded JS Project:</h1>
+  <h3 class="centertext">The Blue Angels at Lake Washington</h3>
+  <table style="width:100%">
+    <tr>
+      <th><img id="img1" src="images/sixpics/20180805_135914.jpg" class="responsive"></th>
+      <th><img id="img2" src="images/sixpics/20180805_140146.jpg" class="responsive"></th>
+      <th> <img id="img3" src="images/sixpics/20180805_140153.jpg" class="responsive"></th>
+      <th><img id="img4" src="images/sixpics/20180805_141103.jpg" class="responsive"></th>
+      <th><img id="img5" src="images/sixpics/20180805_141246.jpg" class="responsive"></th>
+      <th> <img id="img6" src="images/sixpics/20180805_141251(0).jpg" class="responsive"></th>
+    </tr>
+    <tr>
+      <td>
+        <button onclick="document.getElementById('img1').src='images/sixpics/20180805_135914.jpg'">Show Image 1</button>
+        <button onclick="document.getElementById('img1').src=''">Hide Image 1</button>
+      </td>
+      <td>
+        <button onclick="document.getElementById('img2').src='images/sixpics/20180805_140146.jpg'">Show Image 2</button>
+        <button onclick="document.getElementById('img2').src=''">Hide Image 2</button>
+      </td>
+      <td>
+        <button onclick="document.getElementById('img3').src='images/sixpics/20180805_140153.jpg'">Show Image 3</button>
+        <button onclick="document.getElementById('img3').src=''">Hide Image 3</button>
+
+      </td>
+      <td>
+        <button onclick="document.getElementById('img4').src='images/sixpics/20180805_141103.jpg'">Show Image 4</button>
+        <button onclick="document.getElementById('img4').src=''">Hide Image 4</button>
+      </td>
+      <td>
+
+        <button onclick="document.getElementById('img5').src='images/sixpics/20180805_141246.jpg'">Show Image 5</button>
+        <button onclick="document.getElementById('img5').src=''">Hide Image 5</button>
+      </td>
+      <td>
+        <button onclick="document.getElementById('img6').src='images/sixpics/20180805_141251(0).jpg'">Show Image 6</button>
+        <button onclick="document.getElementById('img6').src=''">Hide Image 6</button>
+      </td>
+    </tr>
+  </table>
+  <br><br>
+  <hr>
+  <h1>First Canvas Project:</h1>
+  <canvas id="myCanvas" width="1800" height="400" style="border:5px solid #FF0000;">
+  </canvas>
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(300, 200, 150, 75);
+    ctx.fillStyle = "#0000FF";
+    ctx.fillRect(300, 100, 150, 75);
+    ctx.moveTo(0, 0);
+    ctx.lineTo(1800, 400);
+    ctx.stroke();
+    ctx.moveTo(1800, 0);
+    ctx.lineTo(0, 400);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(900, 200, 200, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.arc(1500, 200, 100, 0.5, 1 * Math.PI);
+    ctx.stroke();
+    var grd = ctx.createLinearGradient(0, 0, 200, 0);
+    grd.addColorStop(0, "red");
+    grd.addColorStop(1, "white");
+    ctx.fillStyle = grd;
+    ctx.fillRect(10, 10, 150, 80);
+  </script>
+  <h1>My Snowman (Frosty):</h1>
+  <canvas id="frosty" width="600" height="800" style="border:5px solid lightblue;">
+  </canvas>
+  <script>
+    var canvas = document.getElementById("frosty");
+    var ctx = canvas.getContext("2d");
+
+    //Bottom Circle (Largest)
+    ctx.beginPath();
+    ctx.arc(300, 560, 150, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "white";
+    ctx.fill();
+
+    //Ground
+    ctx.beginPath();
+    ctx.fillStyle = "rgb(203, 240, 230)";
+    ctx.fillRect(50, 700, 500, 100);
+
+    //Middle Circle and Top Circle
+    ctx.beginPath();
+    ctx.arc(300, 325, 100, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "white";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(300, 165, 70, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    //Three Buttons
+    ctx.beginPath();
+    ctx.arc(300, 325, 10, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(300, 375, 10, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(300, 275, 10, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    //Nose
+    ctx.beginPath();
+    ctx.moveTo(300, 160);
+    ctx.lineTo(375, 170);
+    ctx.lineTo(300, 180);
+    ctx.closePath();
+    ctx.lineWidth = 10;
+    ctx.strokeStyle = 'orange';
+    ctx.stroke();
+    ctx.fillStyle = "orange";
+    ctx.fill();
+
+    //Left Eye, Right Eye
+    ctx.beginPath();
+    ctx.strokeStyle = 'black';
+    ctx.arc(275, 130, 5, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "black";
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(325, 130, 5, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fill();
+
+    //Mouth
+    ctx.beginPath();
+    ctx.arc(300, 190, 30, 0, Math.PI);
+    ctx.stroke();
+
+    //Left Arm, Right Arm
+    ctx.beginPath();
+    ctx.rotate(0.5);
+    ctx.fillStyle = "rgb(91, 67, 31)";
+    ctx.fillRect(178, 170, 150, 15);
+
+    ctx.beginPath();
+    ctx.fillStyle = "rgb(91, 67, 31)";
+    ctx.fillRect(505, 90, 150, 15);
+    </script>
+
+</body>
+
+</html>

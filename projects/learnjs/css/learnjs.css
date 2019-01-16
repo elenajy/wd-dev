@@ -1,0 +1,16 @@
+body {
+  background-color: rgb(222, 140, 232);
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.centertext {
+  text-align: center;
+}
+
+#frosty {
+  background-color: lightblue;
+}
