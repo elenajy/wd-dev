@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Nunito" rel="stylesheet">
+  <link rel="stylesheet" href="css/actionpics.css">
+  <title>Action Pics</title>
+  <style>
+    .mySlides {
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <br />
+  <h1 class="cookie">Welcome to my action pics project!</h1>
+  <br />
+  <hr />
+  <br />
+  <table>
+    <tr>
+      <th colspan="2">
+        <h2 class="cookie">Action Pictures I Made!</h2>
+      </th>
+    </tr>
+
+    <tr class="nunito">
+      <th>
+        My Action Picture
+      </th>
+      <th class>
+          How I made this picture
+        </h2>
+      </th>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="projects/actionpics/images/old/frontflip600.png" alt="Front Flip Action Pic" class="responsive">
+      </td>
+      <td>
+        <img src="projects/actionpics/images/sequence/sequencecollageedited.png" alt="Image Collage" class="responsive">
+        <h1>Steps to Make a Sequence Action Pics</h1>
+        <p>1. First, I opened GIMP and clicked on "File". I then clicked
+          "Open as Layers.." and then selected the images I wanted to be in my action pic.</p>
+        <p>2. Then, I deselected all the eyes from every image expect for the first one which would become
+          my base image.</p>
+        <p>3. I then right-clikced the image, and choose to apply a black layer on it. I then clicked the
+          eye on the image to overlap the layers.</p>
+        <p>4. On the toolbox, I then selected the paintbrush, and switched from a black color to white.</p>
+        <p>5. Finally, I colored in what I wanted from the second image onto my first image. I repeated
+          this for each image I wanted to be a layer to achieve my final result.</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        <img src="projects/actionpics/images/gif/finalavocadotoast.gif" alt="Front Flip Animated Gif" class="responsive">
+        <br><br><h2>I love avocado toast - here's how to make it!</h2>
+      </td>
+      <td>
+        <img src="projects/actionpics/images/gif/collageedited.jpg" alt="Collage of Images">
+        <h1>Steps to Make a GIF</h1>
+        <p>1. After opening the images that I want as layers (see above step 1 for reference on procedure), I
+        selected filters on the menu bar and then animation.</p>
+        <p>2. Then, I selected "Optimize (for GIF)"</p>
+        <p>3. I then opened the layers toolbox.</p>
+        <p>4. I doubled clicked the image times on each layer and changed it to 1000ms because I felt that it was
+        a fast enough time to not make the GIF boring but was slow enough so that you could see each image individually.</p>
+        <p>5. Finally, I exported it as a GIF.</p>
+    </tr>
+
+  </table>
+  <br />
+  <hr />
+  <br />
+  <table>
+    <tr>
+      <th>
+        <p class="slabo">My Slideshow</p>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <div class="w3-content w3-display-container">
+          <img class="mySlides" src="projects/actionpics/images/slideshow/20181031_140109.jpg" style="width:100%">
+          <img class="mySlides" src="projects/actionpics/images/slideshow/20181031_140105.jpg" style="width:100%">
+          <img class="mySlides" src="projects/actionpics/images/slideshow/20181031_140047.jpg" style="width:100%">
+          <img class="mySlides" src="projects/actionpics/images/slideshow/20181031_140119.jpg" style="width:100%">
+
+          <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h2>Here are some images of my fellow collaboraters at work!</h2>
+      </td>
+    </tr>
+  </table>
+  <br /><br />
+  <table>
+    <tr>
+      <th colspan="2">
+        <h2>My Video</h2>
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <video width="320" height="240" controls>
+          <source src="projects/actionpics/video/20180903_173451.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </td>
+      <td>I took this video on my Samsung Galaxy on the Boise River in the summer of 2018.</td>
+    </tr>
+    </video>
+  </table>
+  <br />
+  <hr />
+  <br />
+
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
+
+</body>
+
+</html>
