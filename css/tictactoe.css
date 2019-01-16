@@ -1,0 +1,34 @@
+body {
+  background-color: lavender;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  background-color: lavenderblush;
+  border: 3px solid lightsteelblue;
+  border-spacing: 20px;
+  box-shadow: 10px 10px 10px lightsteelblue;
+  border-radius: 10px;
+}
+
+tr {
+  border: 3px solid cyan;
+  background-color: purple;
+}
+
+td {
+  border: 3px solid lightpink;
+  background-color: lightsteelblue;
+  padding: 100px;
+}
+
+.papaya {
+  background-color: papayawhip;
+  border: 5px solid peachpuff;
+}
+
+.peach {
+  background-color: peachpuff;
+  border: 5px solid papayawhip;
+}

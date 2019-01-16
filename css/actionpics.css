@@ -1,0 +1,58 @@
+body {
+  background-color: lavender;
+  background-image: url("../images/backgrounds/snow.jpeg");
+}
+
+table {
+  width: 90%;
+  margin: auto;
+  border: 5px solid lightsteelblue;
+  border-spacing: 15px;
+  box-shadow: 8px 8px 8px 15px papayawhip;
+}
+
+tr {
+  border: 5px solid lightsteelblue;
+}
+
+td {
+  border: 10px ridge lightsteelblue;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+}
+
+th {
+  font-size: 1.5em;
+  border: 5px solid lightsteelblue;
+  text-align: center;
+  padding: 10px;
+}
+
+.cookie {
+  font-family: 'Cookie', cursive;
+  text-shadow: 2px 2px 4px #CE66FF;
+  font-size: 40px;
+}
+
+.nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.patrick {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.slabo {
+  font-family: 'Slabo 27px', serif;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+img {
+  border-radius: 8px;
+  box-shadow: 10px 10px papayawhip;
+}

@@ -1,0 +1,166 @@
+a:link {
+  color: purple;
+}
+
+/* visited link */
+a:visited {
+  color: purple;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+body {
+  background-color: #FFF0F5;
+  background-image: url("../images/backgrounds/snow.jpeg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.textChange {
+  color: rgb(255, 255, 255);
+  font-size: 4em;
+  font-family: 'Peddana', serif;
+}
+
+.cookie {
+  font-family: 'Cookie', cursive;
+  text-shadow: 2px 2px 4px #CE66FF;
+}
+
+.nunito {
+  font-family: 'Nunito', sans-serif;
+}
+
+.patrick {
+  font-family: 'Patrick Hand', cursive;
+}
+
+.slabo {
+  font-family: 'Slabo 27px', serif;
+}
+
+.floatCenter {
+  float: center;
+  padding: 60px;
+}
+
+.clearFloat {
+  clear: both;
+}
+
+.created-by {
+  grid-area: header;
+}
+
+.more-info {
+  grid-area: footer;
+}
+
+.pro1 {
+  grid-area: pro1;
+}
+
+.pro2 {
+  grid-area: pro2;
+}
+
+.pro3 {
+  grid-area: pro3;
+}
+
+.pro4 {
+  grid-area: pro4;
+}
+
+.pro5 {
+  grid-area: pro5;
+}
+
+.pro6 {
+  grid-area: pro6;
+}
+
+.pro7 {
+  grid-area: pro7;
+}
+
+.pro8 {
+  grid-area: pro8;
+}
+
+.grid-container {
+  border-radius: 20px;
+  box-shadow: 5px 5px 40px #CE66FF;
+  margin: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas:
+    "header header pro1 pro2"
+    "header header pro3 pro4"
+    "pro5 pro6 footer footer"
+    "pro7 pro8 footer footer";
+  grid-gap: 10px;
+  background-color: #696969;
+  padding: 10px;
+}
+
+.zoom {
+  padding: 10px;
+  transition: transform .2s;
+  width: 300px;
+  height: 400px;
+  margin: 0 0 0 0;
+}
+
+.zoom:hover {
+  transform: scale(1.25);
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 40em) {
+  .grid-container {
+    grid-template-areas:
+      "header header header header"
+      "pro1 pro1 pro1 pro1"
+      "pro2 pro2 pro2 pro2"
+      "pro3 pro3 pro3 pro3"
+      "pro4 pro4 pro4 pro4"
+      "pro5 pro5 pro5 pro5"
+      "pro6 pro6 pro6 pro6"
+      "pro7 pro7 pro7 pro7"
+      "pro8 pro8 pro8 pro8"
+      "footer footer footer footer";
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  body {
+    background-image: url("../images/backgrounds/linen.jpg");
+  }
+
+  .grid-container {
+    box-shadow: 5px 5px 40px #4CD2FF;
+  }
+}
+
+.grid-container>div {
+  background-color: #F0FFFF;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
