@@ -1,0 +1,36 @@
+body {
+    background-color: blanchedalmond;
+}
+
+li {
+    font-size: 2em;
+}
+
+.nunito {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+table,th,td {
+    border: 1px solid black;
+    width: 50%;
+    background-color: lightpink;
+}
+
+ul {
+    font-size: 10px;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+}
+
+.tableform {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: lightpink;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+
+}
