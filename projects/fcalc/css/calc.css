@@ -14,7 +14,7 @@ li {
 table,th,td {
     border: 1px solid black;
     width: 50%;
-    background-color: lightpink;
+    background-color: mistyrose;
 }
 
 ul {
@@ -27,10 +27,9 @@ ul {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    background-color: lightpink;
+    background-color: mistyrose;
 }
 
 h3 {
     font-family: 'Nunito', sans-serif;
-
 }

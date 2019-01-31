@@ -30,7 +30,7 @@
     <table class="tableform">
         <tr>
             <td>
-                <input type="text">
+                <input type="text" id="originalPrice">
             </td>
             <td>
                 <h3>Negotiated cost</h3>
@@ -38,7 +38,7 @@
         </tr>
         <tr>
             <td>
-                <input type="text">
+                <input type="text" id="downPayment">
             </td>
             <td>
                 <h3>Down Payment</h3>
@@ -46,14 +46,20 @@
         </tr>
         <tr>
             <td>
-                <button type="button">Click me!</button>
+                <button type="button" onclick="calcPrincipal()">Click me!</button>
             </td>
             <td>
                 <h3>Calculate</h3>
             </td>
         </tr>
         <tr>
-            <td><input type="text"></td>
+            <td><div id="divPrincipal"></div>
+            <td>
+                <h3>This is the calculated result: Principal=Cost-Down Payment </h3>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" id="inputPrincipal"></td>
             <td>
                 <h3>This is the calculated result: Principal=Cost-Down Payment </h3>
             </td>
@@ -94,5 +100,5 @@
     </table>
 
 </body>
-
+<script src="js/calc.js"></script>
 </html>
