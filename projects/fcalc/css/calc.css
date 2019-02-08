@@ -11,7 +11,9 @@ li {
     text-align: center;
 }
 
-table,th,td {
+table,
+th,
+td {
     border: 1px solid black;
     width: 50%;
     background-color: mistyrose;
@@ -32,4 +34,25 @@ ul {
 
 h3 {
     font-family: 'Nunito', sans-serif;
+}
+
+input[type=text] {
+    border: 2px solid black;
+    border-radius: 4px;
+    background-color: blanchedalmond;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+input[type=text]:hover {
+    box-shadow: 10px 10px gray;
+}
+
+button[type=button] {
+    background-color: blanchedalmond;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
 }

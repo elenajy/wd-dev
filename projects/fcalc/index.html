@@ -36,6 +36,30 @@
                 <h3>Negotiated cost</h3>
             </td>
         </tr>
+
+        <tr>
+            <td><input type="text" id="salesTax"></td>
+            <td>
+                <h3>Enter Percent Sales Tax</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" onclick="salesTax()">Click me!</button>
+            </td>
+            <td>
+                <h3>Calculate</h3>
+            </td>
+        </tr>
+        <tr>
+            <td><input type="text" id="totalCost"></td>
+            <td>
+                <h3>Total Cost Including Tax
+            </td>
+            </h3>
+            </td>
+        </tr>
+
         <tr>
             <td>
                 <input type="text" id="downPayment">
@@ -53,7 +77,8 @@
             </td>
         </tr>
         <tr>
-            <td><div id="divPrincipal"></div>
+            <td>
+                <div id="divPrincipal"></div>
             <td>
                 <h3>This is the calculated result: Principal=Cost-Down Payment </h3>
             </td>
@@ -67,7 +92,7 @@
 
         <tr>
             <td>
-                <input type="text">
+                <input type="text" id="apr">
             </td>
             <td>
                 <h3>APR (Annual Precentage Rate)</h3>
@@ -75,7 +100,7 @@
         </tr>
         <tr>
             <td>
-                <input type="text">
+                <input type="text" id="numberPayments">
             </td>
             <td>
                 <h3>Enter the number of months for repayment</h3>
@@ -83,7 +108,7 @@
         </tr>
         <tr>
             <td>
-                <button type="button">Click me!</button>
+                <button type="button" onclick="calcPayment()">Click me!</button>
             </td>
             <td>
                 <h3>Calculate Monthly Payment</h3>
@@ -91,7 +116,7 @@
         </tr>
         <tr>
             <td>
-                <input type="text">
+                <input type="text" id="inputPayment">
             </td>
             <td>
                 <h3>Payment amount per month</h3>
@@ -101,4 +126,5 @@
 
 </body>
 <script src="js/calc.js"></script>
+
 </html>
