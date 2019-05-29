@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Web Design and Development - Elena Yang</title>
+  <link href="https://fonts.googleapis.com/css?family=Cookie|Nunito|Patrick+Hand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Peddana" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="js/home.js"></script>
+  <script src="projects/dom/js/dom.js"></script>
+  <script src="projects/domp2/js/dom.js"></script>
+  <script src="js/classperiod.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/home.css">
+  <link rel="stylesheet" href="projects/dom/css/dom.css">
+</head>
+
+<body onload="renderTime();goodMorningMain();classperiod()">
+
+  <div class="grid-container">
+    <div class="created-by">
+      <h1 class="cookie" id="myName">Created by Elena Yang!<br />(Click For More Info)</h1>
+      <div id="aboutMe">
+        <h3 id="aboutMe">I am a sophmore at Centennial High School.</h3>
+        <p>Aspiring Mathematician - with some comp sci knowledge ;)</p>
+        <p>Amateur cheese connoisseur, with an emphasis in the art of feta</p>
+        <p>Bubble tea, pizza, memes</p>
+        <p>Dabbing enthusiast</p>
+      </div>
+      <hr class="clearFloat">
+      <a href="https://www.westada.org" target="_blank"><img src="images/logos/westada150x150.png" alt="West Ada Logo"
+          class="responsive"></a>
+      <a href="https://www.westada.org/chs" target="_blank"><img src="images/logos/centennial150x150.png"
+          alt="Centennial High School Logo" class="responsive"></a>
+    </div>
+    <div class="more-info">
+      <h1 id="changeText" class="cookie">More Information</h3>
+        <p class="nunito">I worked with
+          <span class="myBlue">
+            <a href="http://www.westada.tech/b4/kayleen" target="_blank">Kaylee,</a>
+          </span>
+          <span class="myBlue">
+            <a href="http://www.westada.tech/b4/ashleyg" target="_blank">Ashley,</a>
+          </span>and
+          <span class="myBlue">
+            <a href="http://www.westada.tech/b4/stuarte" target="_blank">Stu.</a>
+          </span>
+        </p>
+    </div>
+
+    <div class="clock">
+      <div id='clockDisplay' class="nunito" class='container'></div>
+    </div>
+
+    <div class="period">
+      <div id='classperiod' class="nunito" class='container'></div>
+    </div>
+
+    <div class="greeting">
+      <div id='maindiv' class='container'></div>
+    </div>
+
+    <div class="pro1">
+      <a href=pro1.html target="_blank">
+        <h4 class="patrick">How I created my Virtual Machine, Installed SW, and Saved my OVA</h4>
+      </a>
+    </div>
+
+    <div class="pro2">
+      <a href="tictactoe.html" target="_blank">
+        <h4 class="patrick">Two Player Tic-Tac-Toe</h4>
+      </a>
+      <h6 class="patrick">I really liked <a href="http://westada.tech/b4/ashleyg/tictactoe.html"
+          target="_blank">Ashley's</a>
+        stellar color schemes.</h6>
+    </div>
+
+    <div class="pro3">
+      <a href="actionpics.html" target="_blank">
+        <h4 class="patrick">Action Pics</h4>
+      </a>
+      <h6 class="patrick">I 10/10 admire <a href="http://westada.tech/b4/kayleen/actionpics/index.html"
+          target="_blank">Kaylee's</a> work</h6>
+    </div>
+
+    <div class="pro4">
+      <a href="projects/learnjs/learnjshome.html" target="_blank">
+        <h4 class="patrick">Learning Javascript Projects</h4>
+      </a>
+      <h6 class="patrick">I love <a href="http://westada.tech/b4/stuarte/learnjavascript.html" target="_blank">Stu's</a>
+        creativity.</h6>
+    </div>
+
+    <div class="pro5">
+      <h4 class="patrick"><a href="projects/games/index.html" target="_blank">Games</a></h4>
+    </div>
+
+    <div class="pro6">
+      <h4 class="patrick"><a href="projects/javascriptforms/index.html" target="_blank">Javascript Forms</a></h4>
+    </div>
+
+    <div class="pro7">
+      <h4 class="patrick"><a href="projects/jscalc/index.html" target="_blank">JS Calc</a></h4>
+    </div>
+
+    <div class="pro8">
+      <h4 class="patrick"><a href="projects/fcalc/index.html" target="_blank">Financial Calculator</a></h4>
+    </div>
+
+    <div class="pro9">
+      <h4 class="patrick"><a href="projects/JSgraphing/index.html" target="_blank">Class JS Graph</a></h4>
+    </div>
+
+    <div class="pro10">
+      <h4 class="patrick"><a href="projects/JSgraphing/personalized.html" target="_blank">Personalized JS Graph</a></h4>
+    </div>
+
+    <div class="pro11">
+      <h4 class="patrick"><a href="projects/jsgraphtable/index.html" target="_blank">JS Graph Table</a></h4>
+    </div>
+
+    <div class="pro12">
+      <h4 class="patrick"><a href="projects/jsgraphtable/blood.html" target="_blank">Blood Pressure Graph</a></h4>
+    </div>
+
+    <div class="pro13">
+      <h4 class="patrick"><a href="projects/doctorcheck/index.html" target="_blank">Doctor Blood Pressure Charts</a>
+      </h4>
+    </div>
+
+    <div class="pro14">
+      <h4 class="patrick"><a href="projects/english/index.html" target="_blank">English EC Project</a></h4>
+    </div>
+
+    <div class="pro15">
+      <h4 class="patrick"><a href="projects/bargraph/index.html" target="_blank">Bar Graph</a></h4>
+    </div>
+
+    <div class="pro16">
+      <h4 class="patrick"><a href="projects/mousedraw/index.html" target="_blank">Mouse Draw</a></h4>
+    </div>
+
+    <div class="pro17">
+      <h4 class="patrick"><a href="projects/picturepaint/index.html" target="_blank">Picture Paint</a></h4>
+    </div>
+
+    <div class="pro18">
+      <h4 class="patrick"><a href="projects/dom/index.html" target="_blank">Dom</a></h4>
+    </div>
+
+    <div class="pro19">
+      <h4 class="patrick"><a href="projects/domp2/index.html" target="_blank">Dom Part 2</a></h4>
+    </div>
+
+    <div class="pro20">
+      <h4 class="patrick"><a href="projects/dominator/index.html" target="_blank">Dominator</a></h4>
+    </div>
+
+    <div class="pro21">
+      <h4 class="patrick"><a href="projects/imgzoom/index.html" target="_blank">Image Zoom</a></h4>
+    </div>
+
+    <div class="pro22">
+      <h4 class="patrick"><a href="projects/imagefilezoom/index.html" target="_blank">Image File Zoom</a></h4>
+
+    </div>
+
+    <div class="pro23">
+      <h4 class="patrick"><a href="projects/magnifier/index.html" target="_blank">Magnifier</a></h4>
+
+    </div>
+
+    <div class="pro24">
+      <h4 class="patrick"><a href="projects/splitimage/index.html" target="_blank">Image Split</a></h4>
+
+    </div>
+
+    <div class="pro25">
+      <h4 class="patrick"><a href="projects/vidback/index.html" target="_blank">Video Background</a></h4>
+
+    </div>
+
+    <div class="pro26">
+      <h4 class="patrick"><a href="projects/parallax/index.html" target="_blank">Parallax</a></h4>
+    </div>
+
+    <div class="pro27">
+      <h4 class="patrick"><a href="projects/countdown/index.html" target="_blank">Countdown Clock to the End of the
+          School Year</a></h4>
+
+    </div>
+
+    <div class="pro28">
+      <h4 class="patrick"><a href="projects/vcs/index.html" target="_blank">Version Control System</a></h4>
+
+    </div>
+
+    <div class="pro29">
+      <h4 class="patrick"><a href="projects/" target="_blank"></a></h4>
+
+    </div>
+  </div>
+
+
+</body>
+
+</html>
