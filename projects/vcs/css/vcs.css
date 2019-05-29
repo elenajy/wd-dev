@@ -1,0 +1,26 @@
+.nunito {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: lightpink;
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 50%;
+}

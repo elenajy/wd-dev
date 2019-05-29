@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VCS</title>
+    <link rel="stylesheet" href="css/vcs.css">
+</head>
+
+<body>
+    <h1>Mr. M / Version Control System: Git &amp; GitHub / May 2019</h1>
+    <br>
+    <hr><br>
+    <img src="images/GIT2.png" alt="GIT2">
+    <a href="https://kevintshoemaker.github.io/StatsChats/GIT2.png">image source</a>
+
+    <br>
+    <hr><br>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt update</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ sudo apt install git</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git --version
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --global user.name &quot;CHS-McClendon&quot;
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --global user.email &quot;mcclendon.mike@westada.org&quot;
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>~</b></font>$ git config --list
+        user.name=CHS-McClendon
+        user.email=mcclendon.mike@westada.org
+        </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm</b></font>$ git init
+        </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ git config --help
+        </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ git init
+            Initialized empty Git repository in /var/www/html/mrm/projects/vcs/.git/
+            </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs/.git</b></font>$ ll
+                total 40
+                drwxr-xr-x 7 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>.</b></font>/
+                drwxrwxr-x 6 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>..</b></font>/
+                drwxr-xr-x 2 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>branches</b></font>/
+                -rw-r--r-- 1 compsci compsci   92 May 22 13:41 config
+                -rw-r--r-- 1 compsci compsci   73 May 22 13:41 description
+                -rw-r--r-- 1 compsci compsci   23 May 22 13:41 HEAD
+                drwxr-xr-x 2 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>hooks</b></font>/
+                drwxr-xr-x 2 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>info</b></font>/
+                drwxr-xr-x 4 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>objects</b></font>/
+                drwxr-xr-x 4 compsci compsci 4096 May 22 13:41 <font color="#729FCF"><b>refs</b></font>/
+                </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs/.git</b></font>$ cd ..
+                    <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ rm -rf .git
+                    <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ ll</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ git status</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ touch .gitignore
+    </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ gedit .gitignore</pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ git add -A
+        <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ git status
+        </pre>
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ git reset
+        </pre>
+    <h5>Continue on Thursday 23 May</h5>
+
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ git commit -m &quot;Initial commit&quot;</pre>
+
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs/GitHubClones/vcs</b></font>$ git clone https://github.com/CHS-McClendon/VCS_mrm.git .
+    </pre>
+    <pre>$ git remote -v
+        origin	https://github.com/hannah-steiner/VCS_hannahs.git (fetch)
+        origin	https://github.com/hannah-steiner/VCS_hannahs.git (push)
+        </pre>
+    <h3>Make a change, for more git practice</h3>
+
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/mrm/projects/vcs</b></font>$ git diff
+    </pre>
+
+    
+
+    <h3>Today is Friday 24 May</h3>
+
+</body>
+
+</html>

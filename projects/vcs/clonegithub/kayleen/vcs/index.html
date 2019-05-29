@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/vcs.css">
+    <script src="js/vcs.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Version Control System -- Kaylee N. -- May 2019</h1>
+    <a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">
+        <h2>
+            Version control is a system that records changes to a file or set of files over time so that
+            you can recall specific versions later. <br> It allows you to revert selected files back to a previous
+            state, revert the entire project back to a previous state, compare changes over time, <br> see who
+            last modified something that might be causing a problem, who introduced an issue and when, and more.
+            Using a VCS also <br> generally means that if you screw things up or lose files, you can easily recover.
+        </h2>
+    </a>
+
+    <h2>GitHub Directions:</h2>
+    <h3>1- Create a Public account <br> 2- Create a repository <br> 3- Upload files </h3>
+    compsci@compsci-VBox:/var/www/html/kayleen/mmkgyjg$ git --version
+    git version 2.17.1
+
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ git config --global user.name "kayleenez" </pre>
+        <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ git config --global user.email "kneznanski@gmail.com" </pre>
+            <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ git config --list
+user.name=kayleenez
+user.email=kneznanski@gmail.com </pre>
+<pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ git config -- help
+</pre>
+<pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg/.git</b></font>$ ll
+    total 40
+    drwxr-xr-x 7 compsci compsci 4096 May 22 13:39 <font color="#729FCF"><b>.</b></font>/
+    drwxrwxr-x 3 compsci compsci 4096 May 22 13:39 <font color="#729FCF"><b>..</b></font>/
+    drwxr-xr-x 2 compsci compsci 4096 May 22 13:39 <font color="#729FCF"><b>branches</b></font>/
+    -rw-r--r-- 1 compsci compsci   92 May 22 13:39 config
+    -rw-r--r-- 1 compsci compsci   73 May 22 13:39 description
+    -rw-r--r-- 1 compsci compsci   23 May 22 13:39 HEAD
+    drwxr-xr-x 2 compsci compsci 4096 May 22 13:39 <font color="#729FCF"><b>hooks</b></font>/
+    drwxr-xr-x 2 compsci compsci 4096 May 22 13:39 <font color="#729FCF"><b>info</b></font>/
+    drwxr-xr-x 4 compsci compsci 4096 May 22 13:39 <font color="#729FCF"><b>objects</b></font>/
+    drwxr-xr-x 4 compsci compsci 4096 May 22 13:39 <font color="#729FCF"><b>refs</b></font>/
+    </pre> 
+    <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg/.git</b></font>$ cd ..
+        <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ rm -rf .git
+        <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ git init
+        Initialized empty Git repository in /var/www/html/kayleen/mmkgyjg/.git/
+        <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$  git status
+        On branch master
+        
+        No commits yet
+        
+        nothing to commit (create/copy files and use &quot;git add&quot; to track)
+        <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ touch .gitignore
+        <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ cd .gitignore
+        bash: cd: too many arguments
+        <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ getedit .gitignore</pre>
+        <pre><font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ git commit -m &quot;Minor correction to index.html&quot;
+            [master (root-commit) 5541a98] Minor correction to index.html
+             1 file changed, 0 insertions(+), 0 deletions(-)
+             create mode 100644 .gitignore
+            <font color="#8AE234"><b>compsci@compsci-VBox</b></font>:<font color="#729FCF"><b>/var/www/html/kayleen/mmkgyjg</b></font>$ git status
+            On branch master
+            nothing to commit, working tree clean
+            </pre>
+
+            <h2>Continued - May 24</h2>
+
+</body>
+
+</html>
