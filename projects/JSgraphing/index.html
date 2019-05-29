@@ -1,9 +1,9 @@
 <html>
 
 <head>
-
     <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
     <link rel="stylesheet" href="css/home.css">
+    <title>Class Copy</title>
 </head>
 
 <body onLoad="init()">
@@ -12,6 +12,29 @@
         <h2>Monthly Profits of Idaho Companies(in $Millions)</h2>
         <h3>(These numbers are not real, they are for JavaScript graphing practice!) </h3>
 
+        <select name="" id="company" value=""">
+            <option value="none">Select Company</option>
+            <option value="Albertsons">Albertsons</option>
+            <option value="IdaCorp">IdaCorp</option>
+            <option value="Micron">Micron</option>
+        </select>
+        <select id="month" value="" name="">
+            <option value="">Select Month</option>
+            <option value="Jan">January</option>
+            <option value="Feb">Febuary</option>
+            <option value="Mar">March</option>
+            <option value="Apr">April</option>
+            <option value="May">May</option>
+            <option value="Jun">June</option>
+            <option value="Aug">August</option>
+            <option value="Sep">September</option>
+            <option value="Oct">October</option>
+            <option value="Nov">November</option>
+            <option value="Dec">December</option>
+        </select>
+        <input type="text" id="profit" placeholder="Enter Profit $Millions">
+        <button type="button" onclick="update()">Update Graph</button>
+        <br>
         <canvas id="canvas" height="600" width="925">
         </canvas>
         <br>

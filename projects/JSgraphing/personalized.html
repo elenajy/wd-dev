@@ -1,0 +1,51 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Personalized</title>
+</head>
+
+<body onLoad="init()">
+    <h1>JS Graphing Project - Elena Yang - Febuary 8th 2019</h1>
+    <div align="center">
+        <h2>My Average Grades Throughout the School Year</h2>
+        <h3>(These numbers are real) </h3>
+
+        <select name="" id="className" value="">
+            <option value="">Select Class</option>
+            <option value="math">Mathematics</option>
+            <option value="science">Science</option>
+            <option value="history">History</option>
+        </select>
+        <select id="month" value="" name="">
+            <option value="">Select Month</option>
+            <option value="Aug">August</option>
+            <option value="Sep">September</option>
+            <option value="Oct">October</option>
+            <option value="Nov">November</option>
+            <option value="Dec">December</option>
+            <option value="Jan">January</option>
+            <option value="Feb">Febuary</option>
+            <option value="Mar">March</option>
+            <option value="Apr">April</option>
+            <option value="May">May</option>
+            <option value="Jun">June</option>
+        </select>
+        <input type="text" id="something" placeholder="Enter a number I guess">
+        <button type="button" onclick="update()">Update Graph</button>
+        <br>
+        <canvas id="canvas" height="600" width="925">
+        </canvas>
+        <br>
+        <!--Legends for Dataplot -->
+        <div id="legend">
+            <span style="color:#FF0066"> Mathematics </span>
+            <span style="color:#9933FF"> Science</span>
+            <span style="color:#000"> History </span>
+        </div>
+    </div>
+</body>
+<script src="js/personalized.js"></script>
+
+</html>

@@ -6,20 +6,20 @@ var sections;
 var xScale;
 var yScale;
 // Values for the Data Plot, they can also be obtained from an external file
-var Albertsons = [100, 102, 87, , 100, 123, 100, 90, 87, 91, 93, 88];
-var IdaCorp = [30, 50, 70, 80, 90, 100, 95, 91, 85, 92, 99, 130];
-var Micron = [20, -10, -20, -25, -40, 5, 10, 28, 30, 43, 65, 80];
+var mathematics = [100, 100, 87, 5, 100, 23, 100, 90, 87, 91, 93];
+var science = [30, 50, 70, 80, 90, 100, 95, 91, 85, 92, 99];
+var hist = [10, 10, 20, 25, 40, 5, 10, 28, 30, 43, 65];
 
 function init() {
     // set these values for your data 
-    sections = 12;
-    Val_max = 130;
-    Val_min = -50;
+    sections = 11;
+    Val_max = 100;
+    Val_min = 0;
     var stepSize = 10;
     var columnSize = 50;
     var rowSize = 50;
     var margin = 10;
-    var xAxis = [" ", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var xAxis = [" ", "Aug", "Sep", "Oct", "Nov", "Dec", "Jan", "Feb", "Mar", "Apr", "May", "Jun"];
 
     canvas = document.getElementById("canvas");
     context = canvas.getContext("2d");
@@ -56,14 +56,14 @@ function init() {
     // Color of each dataplot items
 
     context.strokeStyle = "#FF0066";
-    plotData(Albertsons);
+    plotData(mathematics);
     context.strokeStyle = "#9933FF";
-    plotData(IdaCorp);
-    context.strokeStyle = "#000";
-    plotData(Micron);
+    plotData(science);
+    context.strokeStyle = "#000000";
+    plotData(hist);
 
     context.setTransform(1, 0, 0, 1, 0, 0);
-    
+
 }
 
 function plotData(dataSet) {
@@ -77,38 +77,36 @@ function plotData(dataSet) {
 
 function update() {
     console.log("Entered update function.");
-    var company = document.querySelector("#company").value;
-    console.log("I read the company as: ", company);
+    var className = document.querySelector("#className").value;
+    console.log("I read the class as: ", className);
     var month = document.querySelector("#month").value;
     console.log("I read the month as: ", month);
-    var profit = parseFloat(document.querySelector("#profit").value);
-    console.log("I read the profit as: ", profit);
+    var grade = parseFloat(document.querySelector("#something").value);
+    console.log("I read the grade as: ", grade);
 
     var monthIndex;
-    if (month === "Jan") {
+    if (month === "Aug") {
         monthIndex = 0;
-    } else if (month === "Feb") {
-        monthIndex = 1;
-    } else if (month === "Mar") {
-        monthIndex = 2;
-    } else if (month === "Apr") {
-        monthIndex = 3;
-    } else if (month === "May") {
-        monthIndex = 4;
-    } else if (month === "Jun") {
-        monthIndex = 5;
-    } else if (month === "Jul") {
-        monthIndex = 6;
-    } else if (month === "Aug") {
-        monthIndex = 7;
     } else if (month === "Sep") {
-        monthIndex = 8;
+        monthIndex = 1;
     } else if (month === "Oct") {
-        monthIndex = 9;
+        monthIndex = 2;
     } else if (month === "Nov") {
-        monthIndex = 10;
+        monthIndex = 3;
     } else if (month === "Dec") {
-        monthIndex = 11;
+        monthIndex = 4;
+    } else if (month === "Jan") {
+        monthIndex = 5;
+    } else if (month === "Feb") {
+        monthIndex = 6;
+    } else if (month === "Mar") {
+        monthIndex = 7;
+    } else if (month === "Apr") {
+        monthIndex = 8;
+    } else if (month === "May") {
+        monthIndex = 9;
+    } else if (month === "Jun") {
+        monthIndex = 10;
     } else {
         console.log("Something went wrong in month conditional")
     } console.log("Month Index: ", monthIndex);
@@ -116,17 +114,17 @@ function update() {
     const context = canvas.getContext('2d');
     context.clearRect(0, 0, canvas.width, canvas.height);
 
-    if (company === "Albertsons") {
-        Albertsons[monthIndex] = profit;
+    if (className === "math") {
+        mathematics[monthIndex] = grade;
         context.strokeStyle = "#FF0066";
-    } else if (company === "IdaCorp") {
-        IdaCorp[monthIndex] = profit;
+    } else if (className === "science") {
+        science[monthIndex] = grade;
         context.strokeStyle = "#9933FF";
-    } else if (company === "Micron") {
-        Micron[monthIndex] = profit;
+    } else if (className === "history") {
+        hist[monthIndex] = grade;
         context.strokeStyle = "#000000";
     } else {
-        console.log("Something went wrote with company update");
+        console.log("Something went wrong with company update");
     }
     init();
 }
