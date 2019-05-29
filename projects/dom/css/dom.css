@@ -1,0 +1,20 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+
+h1 {
+    font-family: 'Major Mono Display', monospace;
+}
+
+#clockDisplay {
+    background-color: #CE66FF;
+    width: 50%;
+    font-size: 30px;
+    color: white;
+    align-content: center;
+    margin: auto;
+    width: 50%;
+    border: 3px solid blue;
+    padding: 10px;
+    border-radius: 5px;
+}

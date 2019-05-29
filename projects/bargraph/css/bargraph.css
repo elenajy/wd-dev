@@ -1,0 +1,14 @@
+body {
+    background-color: cornsilk;
+}
+
+.google {
+    font-family: 'Major Mono Display', monospace;
+}
+
+#canvas {
+    background: pink;
+    box-shadow: 5px 5px 5px blue;
+    border: 5px solid salmon;
+    margin-bottom: 10px;
+}

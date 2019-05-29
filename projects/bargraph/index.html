@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bargraph.css">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display" rel="stylesheet">
+    <script type="text/javascript" src="js/bargraph.js"></script>
+    <title>Bar Graph</title>
+</head>
+
+<body onLoad="init()">
+    <h1 class="google">International GDP Chart - Elena Yang - 3/11/2019</h1>
+    <h3>Definitions (Wikipedia)</h3>
+    <p><b>GDP</b>: Gross Domestic Product; the total value of goods produced and services provided in a country during
+        one year</p>
+    <p><b>GDP PPP</b>: Purchasing power parity basis divided by population</p>
+
+    <select name="" id="country" value=""">
+        <option value="none">Select Company</option>
+        <option value="china">China</option>
+        <option value="usa">USA</option>
+        <option value="india">India</option>
+        <option value="japan">Japan</option>
+        <option value="germany">Germany</option>
+        <option value="russia">Russia</option>
+        <option value="indonesia">Indonesia</option>
+        <option value="brazil">Brazil</option>
+        <option value="uk">UK</option>
+        <option value="france">France</option>
+        <option value="mexico">Mexico</option>
+        <option value="italy">Italy</option>
+        <option value="turkey">Turkey</option>
+        <option value="korea">Korea</option>
+        <option value="spain">Spain</option>
+    </select>
+    <input type="text" id="ppp" placeholder="Enter new GDP PPP">
+    <button type="button" onclick="update()">Update Graph</button>
+    <br>
+
+    <canvas id="canvas" height="800" width="1300"></canvas>
+    <article id="toSTyleJustThis" class="toStyleThisAndOther"></article>
+</body>
+
+</html>
