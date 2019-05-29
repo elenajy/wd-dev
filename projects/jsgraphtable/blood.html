@@ -1,0 +1,290 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Blood Graphs</title>
+</head>
+
+<body onLoad="init()">
+    <h1>JS Graphing Project - Elena Yang - March 1st 2019</h1>
+    <div align="center">
+        <h2>
+            <span class="left">Dr. Yang</span><span class="center">Patient</span><span class="right">DOB unknown</span>​
+        </h2>
+        <br>
+        <canvas id="canvas" height="600" width="925">
+        </canvas>
+        <br>
+        <div id="legend">
+            <span style="color:#FF0066"> Systolic </span>
+            <span style="color:#9933FF"> Diastolic </span>
+            <span style="color:pink"> Glucose </span>
+            <span style="color:blue"> Pulse Ox </span>
+            <span style="color:green"> Welll Being </span>
+        </div>
+    </div>
+    <br>
+    <table align="center">
+        <tr>
+            <th>Day of Month</th>
+            <th>Systolic</th>
+            <th>Diastolic</th>
+            <th>Glucose</th>
+            <th>Pulse Ox</th>
+            <th>Well Being</th>
+            <td rowspan="32" id="submit"><button type="button" onclick="updateTable()">Update Graph</button></td>
+        </tr>
+        <tr>
+            <td><b>1</b></td>
+            <td><input id='1s' type="number"></td>
+            <td><input id='1d' type="number"></td>
+            <td><input id='1g' type="number"></td>
+            <td><input id='1p' type="number"></td>
+            <td><input id='1w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>2</b></td>
+            <td><input id='2s' type="number"></td>
+            <td><input id='2d' type="number"></td>
+            <td><input id='2g' type="number"></td>
+            <td><input id='2p' type="number"></td>
+            <td><input id='2w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>3</b></td>
+            <td><input id='3s' type="number"></td>
+            <td><input id='3d' type="number"></td>
+            <td><input id='3g' type="number"></td>
+            <td><input id='3p' type="number"></td>
+            <td><input id='3w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>4</b></td>
+            <td><input id='4s' type="number"></td>
+            <td><input id='4d' type="number"></td>
+            <td><input id='4g' type="number"></td>
+            <td><input id='4p' type="number"></td>
+            <td><input id='4w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>5</b></td>
+            <td><input id='5s' type="number"></td>
+            <td><input id='5d' type="number"></td>
+            <td><input id='5g' type="number"></td>
+            <td><input id='5p' type="number"></td>
+            <td><input id='5w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>6</b></td>
+            <td><input id='6s' type="number"></td>
+            <td><input id='6d' type="number"></td>
+            <td><input id='6g' type="number"></td>
+            <td><input id='6p' type="number"></td>
+            <td><input id='6w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>7</b></td>
+            <td><input id='7s' type="number"></td>
+            <td><input id='7d' type="number"></td>
+            <td><input id='7g' type="number"></td>
+            <td><input id='7p' type="number"></td>
+            <td><input id='7w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>8</b></td>
+            <td><input id='8s' type="number"></td>
+            <td><input id='8d' type="number"></td>
+            <td><input id='8g' type="number"></td>
+            <td><input id='8p' type="number"></td>
+            <td><input id='8w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>9</b></td>
+            <td><input id='9s' type="number"></td>
+            <td><input id='9d' type="number"></td>
+            <td><input id='9g' type="number"></td>
+            <td><input id='9p' type="number"></td>
+            <td><input id='9w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>10</b></td>
+            <td><input id='10s' type="number"></td>
+            <td><input id='10d' type="number"></td>
+            <td><input id='10g' type="number"></td>
+            <td><input id='10p' type="number"></td>
+            <td><input id='10w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>11</b></td>
+            <td><input id='11s' type="number"></td>
+            <td><input id='11d' type="number"></td>
+            <td><input id='11g' type="number"></td>
+            <td><input id='11p' type="number"></td>
+            <td><input id='11w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>12</b></td>
+            <td><input id='12s' type="number"></td>
+            <td><input id='12d' type="number"></td>
+            <td><input id='12g' type="number"></td>
+            <td><input id='12p' type="number"></td>
+            <td><input id='12w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>13</b></td>
+            <td><input id='13s' type="number"></td>
+            <td><input id='13d' type="number"></td>
+            <td><input id='13g' type="number"></td>
+            <td><input id='13p' type="number"></td>
+            <td><input id='13w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>14</b></td>
+            <td><input id='14s' type="number"></td>
+            <td><input id='14d' type="number"></td>
+            <td><input id='14g' type="number"></td>
+            <td><input id='14p' type="number"></td>
+            <td><input id='14w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>15</b></td>
+            <td><input id='15s' type="number"></td>
+            <td><input id='15d' type="number"></td>
+            <td><input id='15g' type="number"></td>
+            <td><input id='15p' type="number"></td>
+            <td><input id='15w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>16</b></td>
+            <td><input id='16s' type="number"></td>
+            <td><input id='16d' type="number"></td>
+            <td><input id='16g' type="number"></td>
+            <td><input id='16p' type="number"></td>
+            <td><input id='16w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>17</b></td>
+            <td><input id='17s' type="number"></td>
+            <td><input id='17d' type="number"></td>
+            <td><input id='17g' type="number"></td>
+            <td><input id='17p' type="number"></td>
+            <td><input id='17w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>18</b></td>
+            <td><input id='18s' type="number"></td>
+            <td><input id='18d' type="number"></td>
+            <td><input id='18g' type="number"></td>
+            <td><input id='18p' type="number"></td>
+            <td><input id='18w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>19</b></td>
+            <td><input id='19s' type="number"></td>
+            <td><input id='19d' type="number"></td>
+            <td><input id='19g' type="number"></td>
+            <td><input id='19p' type="number"></td>
+            <td><input id='19w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>20</b></td>
+            <td><input id='20s' type="number"></td>
+            <td><input id='20d' type="number"></td>
+            <td><input id='20g' type="number"></td>
+            <td><input id='20p' type="number"></td>
+            <td><input id='20w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>21</b></td>
+            <td><input id='21s' type="number"></td>
+            <td><input id='21d' type="number"></td>
+            <td><input id='21g' type="number"></td>
+            <td><input id='21p' type="number"></td>
+            <td><input id='21w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>22</b></td>
+            <td><input id='22s' type="number"></td>
+            <td><input id='22d' type="number"></td>
+            <td><input id='22g' type="number"></td>
+            <td><input id='22p' type="number"></td>
+            <td><input id='22w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>23</b></td>
+            <td><input id='23s' type="number"></td>
+            <td><input id='23d' type="number"></td>
+            <td><input id='23g' type="number"></td>
+            <td><input id='23p' type="number"></td>
+            <td><input id='23w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>24</b></td>
+            <td><input id='24s' type="number"></td>
+            <td><input id='24d' type="number"></td>
+            <td><input id='24g' type="number"></td>
+            <td><input id='24p' type="number"></td>
+            <td><input id='24w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>25</b></td>
+            <td><input id='25s' type="number"></td>
+            <td><input id='25d' type="number"></td>
+            <td><input id='25g' type="number"></td>
+            <td><input id='25p' type="number"></td>
+            <td><input id='25w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>26</b></td>
+            <td><input id='26s' type="number"></td>
+            <td><input id='26d' type="number"></td>
+            <td><input id='26g' type="number"></td>
+            <td><input id='26p' type="number"></td>
+            <td><input id='26w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>27</b></td>
+            <td><input id='27s' type="number"></td>
+            <td><input id='27d' type="number"></td>
+            <td><input id='27g' type="number"></td>
+            <td><input id='27p' type="number"></td>
+            <td><input id='27w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>28</b></td>
+            <td><input id='28s' type="number"></td>
+            <td><input id='28d' type="number"></td>
+            <td><input id='28g' type="number"></td>
+            <td><input id='28p' type="number"></td>
+            <td><input id='28w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>29</b></td>
+            <td><input id='29s' type="number"></td>
+            <td><input id='29d' type="number"></td>
+            <td><input id='29g' type="number"></td>
+            <td><input id='29p' type="number"></td>
+            <td><input id='29w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>30</b></td>
+            <td><input id='30s' type="number"></td>
+            <td><input id='30d' type="number"></td>
+            <td><input id='30g' type="number"></td>
+            <td><input id='30p' type="number"></td>
+            <td><input id='30w' type="number"></td>
+        </tr>
+        <tr>
+            <td><b>31</b></td>
+            <td><input id='31s' type="number"></td>
+            <td><input id='31d' type="number"></td>
+            <td><input id='31g' type="number"></td>
+            <td><input id='31p' type="number"></td>
+            <td><input id='31w' type="number"></td>
+        </tr>
+    </table>
+</body>
+<script src="js/blood.js"></script>
+
+</html>

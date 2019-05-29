@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="css/mousedraw.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/mousedraw.js"></script>
+    <title>Mouse Draw</title>
+</head>
+<body onload="InitMouseDraw();">
+    <div align="center">
+        <br>
+        <h1>Mouse Draw / Elena Yang / March 19 2019</h1>
+        <br>
+        <hr>
+        <br>
+        <canvas id="drawCanvas" width="1000" height="500" style="border: 3px solid red"></canvas>
+        <br><br>
+        <button onclick="javascript:clearArea();return false;">Clear</button>
+        Line Width: <select id="selWidth">
+            <option value="1">1</option>
+            <option value="3">3</option>
+            <option value="5">5</option>
+            <option value="7">7</option>
+            <option value="9" selected="selected">9</option>
+            <option value="11">11</option>
+        </select>
+        Color: <select id="selColor">
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="yellow" selected="selected">Yellow</option>
+            <option value="gray">Gray</option>
+        </select><br>
+        Tic-Tac-Toe: <select id="selTic">
+            <option value="none" selected="selected">None</option>
+            <option value="3">3x3</option>
+            <option value="5">5x5</option>
+        </select>
+        <button onclick="javascript:tictactoe();">Draw</button>
+    </div>
+    
+</body>
+</html>

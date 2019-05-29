@@ -1,0 +1,64 @@
+body {
+    font-family: 'Thasadith', sans-serif;
+    text-align: center;
+}
+
+body {
+    background-color: bisque;
+}
+
+#legend {
+    font-size: 30px;
+}
+
+input[type=text] {
+    font-size: 1.2em;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    width: 80%;
+    table-layout: fixed;
+    background-color: purple;
+    border-radius: 10px;
+}
+
+th {
+    background-color: aquamarine;
+}
+
+#submit {
+    background-color: salmon;
+}
+
+td {
+    background-color: lightcyan;
+}
+
+table {
+    box-shadow: 5px 10px lightpink;
+}
+
+input {
+    width: 100%;
+}
+
+#profit {
+    width: 20%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    float: center;
+}

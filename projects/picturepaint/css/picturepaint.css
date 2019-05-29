@@ -1,0 +1,18 @@
+.picturepanel {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: -ms-fit-content;
+  width: fit-content;
+  max-width: 800px;
+  max-height: 800px;
+  border: 2px solid silver;
+  overflow: auto;
+  position: relative;
+  background-color: ivory;
+}
+.picturepanel canvas { display: block; }
+.toolbar > * { margin-right: 5px; }
+
+h1 {
+  font-family: 'Major Mono Display', monospace;
+}

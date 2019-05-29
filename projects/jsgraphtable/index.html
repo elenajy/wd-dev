@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Thasadith" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <title>Class Copy</title>
+</head>
+
+<body onLoad="init()">
+    <h1>JS Graphing Project - Elena Yang - Febuary 8th 2019</h1>
+    <div align="center">
+        <h2>Monthly Profits of Idaho Companies(in $Millions)</h2>
+        <h3>(These numbers are not real, they are for JavaScript graphing practice!) </h3>
+
+        <table>
+            <tr>
+                <th></th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov</th>
+                <th>Dec</th>
+                <td rowspan="4" id="submit"><button type="button" onclick="updateTable()">Update Graph</button></td>
+            </tr>
+            <tr>
+                <td><b>Albertsons</b></td>
+                <td><input id='A0' type="number"></td>
+                <td><input id='A1' type="number"></td>
+                <td><input id='A2' type="number"></td>
+                <td><input id='A3' type="number"></td>
+                <td><input id='A4' type="number"></td>
+                <td><input id='A5' type="number"></td>
+                <td><input id='A6' type="number"></td>
+                <td><input id='A7' type="number"></td>
+                <td><input id='A8' type="number"></td>
+                <td><input id='A9' type="number"></td>
+                <td><input id='A10' type="number"></td>
+                <td><input id='A11' type="number"></td>
+            </tr>
+            <tr>
+                <td><b>IdaCorp</b></td>
+                <td><input id='I0' type="number"></td>
+                <td><input id='I1' type="number"></td>
+                <td><input id='I2' type="number"></td>
+                <td><input id='I3' type="number"></td>
+                <td><input id='I4' type="number"></td>
+                <td><input id='I5' type="number"></td>
+                <td><input id='I6' type="number"></td>
+                <td><input id='I7' type="number"></td>
+                <td><input id='I8' type="number"></td>
+                <td><input id='I9' type="number"></td>
+                <td><input id='I10' type="number"></td>
+                <td><input id='I11' type="number"></td>
+            </tr>
+            <tr>
+                <td><b>Micron</b></td>
+                <td><input id='M0' type="number"></td>
+                <td><input id='M1' type="number"></td>
+                <td><input id='M2' type="number"></td>
+                <td><input id='M3' type="number"></td>
+                <td><input id='M4' type="number"></td>
+                <td><input id='M5' type="number"></td>
+                <td><input id='M6' type="number"></td>
+                <td><input id='M7' type="number"></td>
+                <td><input id='M8' type="number"></td>
+                <td><input id='M9' type="number"></td>
+                <td><input id='M10' type="number"></td>
+                <td><input id='M11' type="number"></td>
+            </tr>
+        </table>
+        <br>
+        
+        <canvas id="canvas" height="600" width="925">
+        </canvas>
+        <br>
+        <!--Legends for Dataplot -->
+        <div id="legend">
+            <span style="color:#FF0066"> Albertsons </span>
+            <span style="color:#9933FF"> IdaCorp</span>
+            <span style="color:#000"> Micron </span>
+        </div>
+    </div>
+</body>
+<script src="js/jsgraphtable.js"></script>
+
+</html>

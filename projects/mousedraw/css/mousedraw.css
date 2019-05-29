@@ -1,0 +1,17 @@
+button {
+    background-color: indigo;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+#drawCanvas {
+    background-color: antiquewhite;
+    box-shadow: 8px 8px 16px blue;
+    border-radius: 5px;
+}
