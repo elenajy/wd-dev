@@ -66,6 +66,18 @@ body {
   grid-area: footer;
 }
 
+.clock {
+  grid-area: clock;
+}
+
+.greeting {
+  grid-area: greeting;
+}
+
+.period {
+  grid-area: period;
+}
+
 .pro1 {
   grid-area: pro1;
 }
@@ -109,7 +121,14 @@ body {
     "header header pro1 pro2"
     "header header pro3 pro4"
     "pro5 pro6 footer footer"
-    "pro7 pro8 footer footer";
+    "pro7 pro8 footer footer"
+    "clock clock pro9 pro10"
+    "pro11 pro12 greeting greeting"
+    "period period pro13 pro14"
+    "pro15 pro16 pro17 pro18"
+    "pro19 pro20 pro21 pro22"
+    "pro23 pro24 pro25 pro26"
+    "pro27 pro28 pro29 pro29";
   grid-gap: 10px;
   background-color: #696969;
   padding: 10px;
@@ -144,6 +163,15 @@ body {
       "pro6 pro6 pro6 pro6"
       "pro7 pro7 pro7 pro7"
       "pro8 pro8 pro8 pro8"
+      "pro9 pro9 pro9 pro9"
+      "pro10 pro10 pro10 pro10"
+      "pro11 pro11 pro11 pro11"
+      "pro12 pro12 pro12 pro12"
+      "pro13 pro13 pro13 pro13"
+      "pro14 pro14 pro14 pro14"
+      "pro15 pro15 pro15 pro15"
+      "pro16 pro16 pro16 pro16"
+      "pro17 pro17 pro17 pro17"
       "footer footer footer footer";
   }
 }
